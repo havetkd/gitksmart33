@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{layout/default}">
+      
+	<th:block layout:fragment="customTitle">
+		<title>회원가입</title>
+	</th:block>
+	<th:block layout:fragment="customContents">
+		<form  method="post">
+			<table>
+				<tr>
+					<td>아이디</td>
+					<td><input type="text" name="memberId" id="memberId"></td>
+				</tr>
+				<tr>
+					<td>비밀번호</td>
+					<td><input type="password" name="memberPw" id="memberPw"></td>
+				</tr>
+				<tr>
+					<td>권한</td>
+					<td><input type="text" name="memberLevel" id="memberLevel"></td>
+				</tr>
+				<tr>
+					<td>이름</td>
+					<td><input type="text" name="memberName" id="memberName"></td>
+				</tr>
+				<tr>
+					<td>이메일</td>
+					<td><input type="text" name="memberEmail" id="memberEmail"></td>
+				</tr>
+				<tr>
+					<td><input type="submit" name="join" id="join" value="회원가입"></td>					
+				</tr>
+				
+				
+			</table>
+		</form>	
+	</th:block>
+</html>
